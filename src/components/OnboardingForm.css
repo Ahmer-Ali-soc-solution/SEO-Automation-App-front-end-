@@ -1,0 +1,325 @@
+
+/* ===============================
+   ONBOARDING PAGE STYLES
+   =============================== */
+
+   /* Container and Form Layout */
+   .onboarding-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9fafb;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .onboarding-back {
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 30px;
+    color: #111827;
+  }
+  
+  .inline-input-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .inline-label {
+    min-width: 120px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .required {
+    color: red;
+    margin-left: 2px;
+  }
+  
+  /* Form Section */
+  .onboarding-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 10px;
+  }
+  
+  /* Grid Layout for 2 Columns */
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* Group Spacing */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="url"] {
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    width: 95%;
+    resize: none;
+  }
+  
+  textarea {
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    width: 98%;
+    resize: none;
+    height: 80px;
+  }
+  
+  
+  /* Table Styling */
+  .service-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .service-table th {
+    background-color: #e5e7eb; /* Slightly darker header */
+    font-weight: 600;
+    
+  }
+  
+  .service-table th,
+  .service-table td {
+    border: 1px solid #e5e7eb;
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .service-table input[type="checkbox"] {
+    transform: scale(1.2);
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 8px 14px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #2563eb;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Add Row Buttons */
+  button[type="button"] {
+    width: fit-content;
+    background-color: #f9fafb;
+    color: #2563eb;
+    /* border: 1px solid #2563eb; */
+    margin-top: 8px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #eff6ff;
+    }
+  
+  .center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Location Row with Open Maps Link */
+  .location-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .location-row input {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .location-row a {
+    color: #2563eb;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  
+  .delete-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .trash-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .map-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .input-with-button {
+    position: relative;
+    flex: 1; /* allow it to stretch inside .location-row */
+    min-width: 200px;
+  }
+  
+  .input-with-button input {
+    width: 100%;
+    padding-right: 40px; /* space for the icon inside input */
+    height: 40px;
+    box-sizing: border-box;
+  }
+  
+  .input-with-button .map-button {
+    position: absolute;
+    top: 30%;
+    right: 8px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 8px;
+    height: 28px;
+    font-size: 14px;
+    color: #000000;
+    cursor: pointer;
+    background-color: #f3f4f6;
+    border-radius: 4px;
+  }
+  
+  .input-with-button .map-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .form-submit {
+    text-align: right;
+  }
+  
+
+  /* ============== RESPONSIVE STYLES ============== */
+
+/* Tablet view (up to 1024px) */
+@media (max-width: 1024px) {
+    .onboarding-container {
+      padding: 30px 16px;
+    }
+  
+    .form-grid {
+      grid-template-columns: 1fr; /* Stack columns */
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    textarea {
+      width: 100%;
+    }
+  
+    .inline-input-group {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .location-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .input-with-button {
+      width: 100%;
+    }
+  
+    .input-with-button .map-button {
+      top: 35%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+    .service-table input[type="text"] {
+        width: 80%;
+      }
+  }
+  
+  /* Mobile view (up to 600px) */
+  @media (max-width: 600px) {
+    .onboarding-back {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    label {
+      font-size: 16px;
+    }
+  
+    button {
+      font-size: 16px;
+   
+    }
+  
+    .center-button {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .form-submit {
+      text-align: center;
+    }
+  
+    .input-with-button .map-button {
+      font-size: 12px;
+      height: 26px;
+      padding: 0 6px;
+    }
+  
+    .trash-icon,
+    .map-icon {
+      width: 20px;
+      height: 20px;
+    }
+    .service-table input[type="text"] {
+        width: 70%;
+      }
+    
+
+  }
+  

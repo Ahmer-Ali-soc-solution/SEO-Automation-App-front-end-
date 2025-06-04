@@ -1,0 +1,233 @@
+/* Typography & Reset */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ConnectCards Layout */
+.connect-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start; /* changed from space-between */
+  margin-bottom: 30px;
+}
+
+/* Individual Card */
+.connect-card {
+  background-color: #fff;
+  padding: 20px 24px; /* More horizontal padding */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 140px;
+}
+
+/* Icon + Text Row */
+.connect-card-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.connect-card-footer {
+  display: flex;
+  justify-content: flex-end; /* Push button to the right */
+  margin-top: auto;          /* Push footer to bottom of card if needed */
+}
+
+.connect-card-logo-container {
+  width: 48px;
+  height: 48px;
+  background-color: #f1f5f9; /* Light background behind logo */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7.5px; /* Space between logo and title */
+}
+
+.connect-card-logo {
+  width: 30.75px; /* Adjust based on logo size from Figma */
+  height: 27.1px;
+  object-fit: contain;
+}
+
+.connect-card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #111827;
+}
+
+/* Button */
+.button-connect {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #ffffff;
+
+  background-color: #2B4DBA;
+  border: none;
+  border-radius: 6px;
+
+  width: 79px;
+  height: 32px;
+
+  padding: 4px 10px;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.half-width {
+  width: 50%;
+}
+
+.app-wrapper {
+  display: flex;
+  gap: 24px;
+  padding-left: 3px;
+  padding-right: 20px; 
+  align-items: flex-start;
+  margin-top: 20px; /* Add this line to create space above */
+}
+
+/* ===============================
+   SERVICE AREAS SECTION STYLES
+   =============================== */
+
+/* Main wrapper for the section box */
+.service-areas-section {
+  background-color: #fff;           /* White background like the card */
+  border-radius: 12px;              /* Rounded corners */
+  padding: 24px;                    /* Padding inside the box */
+  margin-bottom: 30px;             /* Space below the section */
+}
+
+/* Top header area: title and View All button */
+.service-areas-header {
+  display: flex;                    /* Align title and button in row */
+  justify-content: space-between;  /* Push them to far left/right */
+  align-items: center;             /* Align vertically centered */
+  margin-bottom: 16px;             /* Space below header before table */
+}
+
+/* Title text inside the header */
+.service-areas-header h2 {
+  font-size: 20px;                 /* Figma font size */
+  font-weight: 600;               /* Semi-bold */
+  color: #111827;                 /* Dark gray */
+  margin: 0;                      /* Reset any browser default margin */
+}
+
+/* The blue (16) count beside title */
+.count {
+  color: #2B4DBA;                  /* Blue color from Figma */
+}
+
+/* View All button styles */
+.view-all-btn {
+  background-color: transparent;   /* No background */
+  border: 1px solid #E5E7EB;       /* Light border */
+  border-radius: 6px;              /* Rounded corners */
+  padding: 4px 12px;               /* Vertical and horizontal padding */
+  font-size: 14px;                 /* Text size */
+  cursor: pointer;                 /* Pointer cursor on hover */
+}
+
+/* Wrapper for the whole table section (header + rows) */
+.services-table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #E5E7EB; /* 👈 Adds a border around the whole table */
+  border-radius: 8px;         /* Optional: match the style with rounded corners */
+  overflow: hidden;           /* Ensures inner elements don't break border radius */
+}
+
+/* The column headers (like a table heading row) */
+.services-table-header {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr 1fr 1fr;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #000000;
+}
+.services-table-header div {
+  padding: 12px 16px;                /* Moved vertical padding here */
+  border-right: 1px solid #E5E7EB;
+}
+.services-table-header div:last-child {
+  border-right: none;
+}
+
+/* ========================
+   SERVICE ROW ITEM STYLES
+   ======================== */
+
+/* Each row representing a service */
+.service-row {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr 1fr 1fr;
+  align-items: stretch;                 /* Ensures cell heights match */
+  border-top: 1px solid #F3F4F6;
+}
+
+.service-row .service-cell {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #000000;
+  border-right: 1px solid #E5E7EB;     /* Adds vertical border */
+  display: flex;
+  align-items: center;                 /* Vertical centering */
+}
+
+
+
+/* Optional: For making the service name bold */
+.service-name {
+  font-weight: 500;
+  color: #000000;
+}
+/* Load More Button Section */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.load-more-btn {
+  width: 100%;
+  background-color: #ffffff;
+  color: #2B4DBA;
+  border: 1px solid #e5e7eb;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #f9fafb;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

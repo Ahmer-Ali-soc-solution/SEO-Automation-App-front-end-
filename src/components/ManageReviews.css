@@ -1,0 +1,18 @@
+/* ManageReview.css */
+
+.review-item {
+    margin-bottom: 16px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+  
+  .review-comment {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .review-meta {
+    font-size: 0.8rem;
+    color: #999;
+  }
+  

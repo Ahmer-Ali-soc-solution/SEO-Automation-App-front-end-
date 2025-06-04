@@ -1,0 +1,224 @@
+/* ===============================
+   PRICINGPLANS PAGE STYLES
+   =============================== */
+
+ /* Pricing Plan Page */
+
+
+.pricing-container {
+    max-width: 1440px;
+    padding: 60px 40px;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    min-height: 100vh;
+  }
+  
+  /* Back Button */
+  .pricing-back {
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #111827;
+    font-size: 24px;
+  }
+  
+  /* Center content (toggle + cards) */
+  .pricing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  /* Toggle Label Row */
+  .pricing-toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #4b5563;
+  }
+  
+  .active-cycle {
+    font-weight: 600;
+    color: #111827;
+    cursor: pointer;
+  }
+  
+  /* Toggle switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d1d5db;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  /* When checked */
+  .switch input:checked + .slider {
+    background-color: #3b82f6;
+  }
+  
+  .switch input:checked + .slider::before {
+    transform: translateX(20px);
+  }
+  
+  /* Save Badge (Annual) */
+  .save-badge {
+    background-color: #d1fae5;
+    color: #10b981;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+    margin-left: 8px;
+  }
+  
+  /* Pricing Cards Grid */
+  .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Card */
+  .pricing-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .pricing-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .pricing-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+  }
+  
+  .pricing-subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 16px;
+  }
+  
+  /* Price Text */
+  .pricing-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 16px;
+  }
+  
+  .pricing-per-month {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-left: 4px;
+  }
+  
+  /* Upgrade Button */
+  .pricing-upgrade-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%; /* Make button stretch full width */
+  }
+  
+  .pricing-upgrade-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* What's Included Section */
+  .pricing-includes {
+    text-align: left;
+    margin-top: 16px;
+  }
+  
+  .pricing-includes p {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #111827;
+  }
+  
+  .pricing-includes ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    color: #374151;
+  }
+  
+  .pricing-includes li {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pricing-includes li::before {
+    content: '✅';
+    margin-right: 6px;
+    font-size: 14px;
+  }
+  
+  .pricing-toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .save-text {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  

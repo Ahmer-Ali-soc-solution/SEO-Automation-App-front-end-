@@ -1,0 +1,152 @@
+/* ===============================
+   COMPANY DETAILS SECTION STYLES
+   =============================== */
+
+/* Main container */
+.section-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Header with section title and Save button */
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .section-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .edit-button {
+    background-color: #2B4DBA;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: #1e3fa6;
+  }
+  
+  /* Grid for input sections */
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .info-box {
+    background-color: #f9f9f9;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Label text styling */
+  .info-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #142C7C;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  
+  .info-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  /* Input field */
+  .input-field {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background-color: transparent;
+    color: #111827;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border-color: #2B4DBA;
+  }
+  
+  /* Table styling */
+  .table-container {
+    margin-bottom: 24px;
+    overflow-x: auto;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 12px 8px;
+    text-align: left;
+    font-size: 14px;
+    color: #111827;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .keyword-cell {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .keyword-tag {
+    background-color: #e0e7ff;
+    color: #3730a3;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+  
+  /* Service areas */
+  .area-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+  }
+  
+  .service-row {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .service-box {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .location-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  

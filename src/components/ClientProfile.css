@@ -1,0 +1,121 @@
+/* ===============================
+   CLIENT PROFILE SECTION STYLES
+   =============================== */
+
+/* Section container */
+.client-profile-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 30px;
+    font-family: system-ui, sans-serif;
+  }
+  
+  /* Header with title and button */
+  .client-profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .client-profile-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+  }
+  
+  .view-all-btn {
+    background-color: transparent;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2563eb;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  /* ===============================
+     CLIENT PROFILE TABLE STYLES
+     =============================== */
+  
+  .client-profile-table {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  /* Table header */
+  .client-profile-table-header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #000;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .client-profile-table-header > div {
+    padding: 12px;
+    border-right: 1px solid #e5e7eb;
+  }
+  .client-profile-table-header > div:last-child {
+    border-right: none;
+  }
+  
+  /* Table rows */
+  .client-profile-table-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .client-profile-table-cell {
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+    border-right: 1px solid #e5e7eb;
+    word-break: break-word;
+  }
+  .client-profile-table-cell:last-child {
+    border-right: none;
+  }
+  
+  .client-profile-table-row:last-child {
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  /* Load More Button */
+  .load-more-container {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+  }
+  
+  .load-more-btn {
+    width: 100%;
+    background-color: #ffffff;
+    color: #2B4DBA;
+    border: 1px solid #e5e7eb;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .load-more-btn:hover {
+    background-color: #2563eb;
+    color: white;
+  }
+  

@@ -1,0 +1,204 @@
+
+/* ===============================
+   LOGIN PAGE STYLES
+   =============================== */
+
+/* Login page layout */
+.login-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Left image section */
+  .login-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensures it fills height */
+  }
+  
+  /* Right form section */
+  .login-form-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .login-form h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .input-label {
+    font-weight: 500;
+  }
+  
+  .required-star {
+    color: red;
+  }
+  
+  .login-input {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  
+  .forgot-password a {
+    color: #2B4DBA;
+    text-decoration: none;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2B4DBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .signup-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .signup-text a {
+    color: #2B4DBA;
+    text-decoration: none;
+  }
+  
+  .or-separator {
+    margin: 30px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  .or-separator hr {
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  .or-separator span {
+    background: #fff;
+    padding: 0 10px;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .social-button {
+    flex: 1;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .social-button img {
+    width: 18px;
+    margin-right: 8px;
+  }
+  
+  .social-button.apple {
+    background-color: black;
+    color: white;
+  }
+  
+
+  /* ===============================
+   RESPONSIVE STYLES
+   =============================== */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-image {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .login-form-wrapper {
+    padding: 40px 20px;
+  }
+
+  .login-form {
+    max-width: 90%;
+  }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .login-image {
+    /* display: none; */
+  }
+
+  .login-form-wrapper {
+    padding: 30px 15px;
+  }
+
+  .login-form {
+    max-width: 100%;
+  }
+
+  .login-form h2 {
+    font-size: 20px;
+  }
+
+  .login-input {
+    width: 100%;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .login-button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .social-buttons {
+    flex-direction: flex;
+  }
+
+  .social-button {
+    width: 100%;
+  }
+}

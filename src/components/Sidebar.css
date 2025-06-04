@@ -1,0 +1,97 @@
+/* ===== SIDEBAR STYLES ===== */
+/* .sidebar {
+    width: 200px;
+    color: #fff;
+    height: 100vh;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #000; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  } */
+  
+  /* Logo styles */
+  .app-sidebar-logo {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .app-sidebar-logo-bg {
+    background-color: #0f172a;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .app-sidebar-logo img {
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin-left: -10px;
+  }
+  
+  /* Menu styles */
+  .app-sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .app-sidebar-item {
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .app-sidebar-item:hover,
+  .app-sidebar-item.active {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .app-sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  /* Sidebar toggle button for mobile only */
+  /* .sidebar-toggle {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+    background: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  } */
+  
+  /* === Mobile/Tablet view ===
+  @media (max-width: 768px) {
+    .sidebar {
+      transform: translateX(-100%);
+    }
+  
+    .sidebar.open {
+      transform: translateX(0);
+    }
+  
+    .sidebar-toggle {
+      display: block;
+    }
+  } */
+  

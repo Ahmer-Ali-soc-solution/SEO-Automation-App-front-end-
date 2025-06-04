@@ -1,0 +1,118 @@
+/* ===============================
+   CONNECT CARDS SECTION STYLES
+   =============================== */
+
+/* ConnectCards Layout */
+.connect-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  /* Individual Card */
+  .connect-card {
+    background-color: #fff;
+    padding: 20px 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 140px;
+  }
+  
+  /* Icon + Text Row */
+  .connect-card-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .connect-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+  }
+  
+  .connect-card-logo-container {
+    width: 48px;
+    height: 48px;
+    background-color: #f1f5f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7.5px;
+    flex-shrink: 0;
+  }
+  
+  .connect-card-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  .connect-card-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #111827;
+  }
+  
+  /* Button */
+  .button-connect {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #ffffff;
+    background-color: #2B4DBA;
+    border: none;
+    border-radius: 6px;
+    width: 79px;
+    height: 32px;
+    padding: 4px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  
+  /* Medium screens - tablets, smaller laptops */
+  @media (max-width: 900px) {
+    .connect-card {
+      width: 45%;  /* Two cards per row */
+    }
+  }
+  
+  /* Small screens - phones */
+  @media (max-width: 600px) {
+    .connect-cards-wrapper {
+      justify-content: center; /* Center cards on small screens */
+    }
+  
+    .connect-card {
+      width: 100%;  /* Full width cards */
+      height: auto; /* Let height adjust naturally */
+      padding: 16px 20px;
+    }
+  
+    .connect-card-title {
+      font-size: 16px;
+    }
+  
+    .button-connect {
+      width: 100%; /* Button full width */
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+  
