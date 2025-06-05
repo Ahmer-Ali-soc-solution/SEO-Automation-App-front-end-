@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
-
 import LoginPage from './components/LoginPage';
 import SignupPage from './components/SignupPage';
 import PricingPlan from './components/PricingPlan';
