@@ -38,7 +38,7 @@
     margin-left: 2px;
   }
   
-  /* Form Section */
+ 
   .onboarding-form {
     background: #fff;
     padding: 30px;
@@ -50,14 +50,14 @@
     padding-left: 10px;
   }
   
-  /* Grid Layout for 2 Columns */
+  
   .form-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   
-  /* Group Spacing */
+ 
   .form-group {
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@
   input[type="text"],
   input[type="email"],
   input[type="url"] {
-    padding: 10px 12px;
+    padding: 10px 19px;
     font-size: 14px;
     border: 1px solid #d1d5db;
     border-radius: 6px;
@@ -100,7 +100,7 @@
   }
   
   .service-table th {
-    background-color: #e5e7eb; /* Slightly darker header */
+    background-color: #e5e7eb; 
     font-weight: 600;
     
   }
@@ -134,7 +134,7 @@
     background-color: #1d4ed8;
   }
   
-  /* Add Row Buttons */
+  
   button[type="button"] {
     width: fit-content;
     background-color: #f9fafb;
@@ -153,7 +153,6 @@
     margin-top: 10px;
   }
   
-  /* Location Row with Open Maps Link */
   .location-row {
     display: flex;
     align-items: center;
@@ -197,13 +196,13 @@
   
   .input-with-button {
     position: relative;
-    flex: 1; /* allow it to stretch inside .location-row */
+    flex: 1; 
     min-width: 200px;
   }
   
   .input-with-button input {
     width: 100%;
-    padding-right: 40px; /* space for the icon inside input */
+    padding-right: 40px; 
     height: 40px;
     box-sizing: border-box;
   }
@@ -246,7 +245,7 @@
     }
   
     .form-grid {
-      grid-template-columns: 1fr; /* Stack columns */
+      grid-template-columns: 1fr; 
     }
   
     input[type="text"],

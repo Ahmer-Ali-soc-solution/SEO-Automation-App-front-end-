@@ -38,15 +38,12 @@ function KeywordPerformance() {
 
       {/* Table */}
       <div className="service-table-section">
-        {/* Table Header */}
         <div className="keyword-table-header">
           <div>Target Keyword + Service Area</div>
           <div>Clicks</div>
           <div>Impressions</div>
           <div>CTR</div>
         </div>
-
-        {/* Table Rows */}
         {keywordData.map((item, index) => (
           <div className="keyword-table-row" key={index}>
             <div className="service-table-cell">{item.keyword}</div>

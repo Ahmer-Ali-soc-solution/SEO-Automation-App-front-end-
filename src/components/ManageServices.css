@@ -96,18 +96,18 @@
     left: 20px;
   }
   
-  /* Responsive for mobile: stack columns vertically */
+  /* Responsive for mobile:*/
   @media (max-width: 600px) {
     .services-grid {
       grid-template-columns: 1fr;
       gap: 16px 0;
     }
     .services-column {
-        border-radius: 8px; /* keep all corners rounded */
+        border-radius: 8px;
       }
     
       .services-column:not(:last-child) {
-        margin-bottom: 16px; /* add spacing between stacked boxes */
+        margin-bottom: 16px;
       }
   }
   

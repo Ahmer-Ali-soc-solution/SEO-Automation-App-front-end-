@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Keep this line
+import { Link, useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 import handshakeImage from '../assets/images/handshake.png';
 import appleIcon from '../assets/images/apple-icon.svg';
@@ -8,15 +8,61 @@ import googleIcon from '../assets/images/google-icon.svg';
 function LoginPage({ onLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+
+  const handleLogin = async (e) => {
     e.preventDefault();
-    if (email === 'admin@example.com' && password === 'password') {
-      onLogin();
-    } else {
-      alert('Invalid credentials');
+
+    try {
+      // const response = await fetch('http://51.21.149.16/auth/login/', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify({
+      //     email,
+      //     password,
+      //   }),
+      // });
+      const response = await fetch('http://localhost:8010/proxy/auth/login/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          password,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.token && data.token.access) {
+       
+        localStorage.setItem('accessToken', data.token.access);
+        localStorage.setItem('refreshToken', data.token.refresh);
+        
+        if (onLogin) {
+          onLogin(); 
+        } else {
+          navigate('/dashboard'); 
+        }
+      } else {
+        alert(data.detail || 'Login failed. Please check your credentials.');
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      alert('An error occurred during login. Please try again.');
     }
   };
+
+  //   if (email === 'admin@example.com' && password === 'password') {
+  //     onLogin();
+  //   } else {
+  //     alert('Invalid credentials');
+  //   }
+  // };
 
   return (
     <div className="login-container">
@@ -52,13 +98,13 @@ function LoginPage({ onLogin }) {
           />
 
           <div className="forgot-password">
-            <a href="#">Forget Password?</a>
+            <Link to="/forgot-password">Forgot Password?</Link>
           </div>
 
           <button type="submit" className="login-button">Login</button>
 
           <div className="signup-text">
-            Don’t have an account? <Link to="/pricing">Sign Up</Link>
+            Don’t have an account? <Link to="/signup">Sign Up</Link>
           </div>
 
           <div className="or-separator">

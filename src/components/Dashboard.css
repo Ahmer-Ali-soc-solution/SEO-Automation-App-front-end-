@@ -89,7 +89,7 @@
   @media (max-width: 768px) {
     .sidebar-toggle {
       display: block;
-      position: fixed; /* so it stays visible */
+      position: fixed; 
     }
   }
   

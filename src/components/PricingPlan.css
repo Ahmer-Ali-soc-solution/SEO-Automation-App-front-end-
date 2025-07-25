@@ -22,7 +22,7 @@
     font-size: 24px;
   }
   
-  /* Center content (toggle + cards) */
+ 
   .pricing-content {
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@
     border-radius: 50%;
   }
   
-  /* When checked */
+
   .switch input:checked + .slider {
     background-color: #3b82f6;
   }
@@ -105,7 +105,7 @@
     margin-left: 8px;
   }
   
-  /* Pricing Cards Grid */
+ 
   .pricing-cards {
     display: flex;
     justify-content: center;
@@ -113,7 +113,7 @@
     flex-wrap: wrap;
   }
   
-  /* Individual Card */
+ 
   .pricing-card {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
@@ -169,7 +169,7 @@
     margin-bottom: 16px;
     cursor: pointer;
     transition: background-color 0.2s ease;
-    width: 100%; /* Make button stretch full width */
+    width: 100%; 
   }
   
   .pricing-upgrade-btn:hover {

@@ -16,7 +16,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Ensures it fills height */
+    min-height: 100vh;
   }
   
   /* Right form section */

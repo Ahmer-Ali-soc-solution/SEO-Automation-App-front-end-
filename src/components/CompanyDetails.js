@@ -146,7 +146,6 @@ function CompanyDetails() {
 
       {/* Service Areas */}
       <div className="area-wrapper">
-        {/* 3 Service Areas in 1 row */}
         <div className="service-row">
           {mockData.serviceAreas.slice(0, 3).map((label, i) => (
             <div className="info-box service-box" key={i}>
@@ -156,7 +155,7 @@ function CompanyDetails() {
           ))}
         </div>
 
-        {/* 4 Primary Locations in 2 rows (2x2 layout) */}
+        {/*  Primary Locations  */}
         <div className="location-grid">
           {mockData.serviceAreas.slice(3).map((label, i) => (
             <div className="info-box" key={i + 3}>

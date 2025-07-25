@@ -4,7 +4,7 @@ import './ServicesAreas.css';
 function ServiceAreas() {
   const [services, setServices] = useState([]);
 
-  // Simulate fetching data from API
+  
   useEffect(() => {
     // Dummy data
     const dummyData = [
@@ -31,7 +31,7 @@ function ServiceAreas() {
       }
     ];
 
-    // Simulate async fetch
+    
     setTimeout(() => {
       setServices(dummyData);
     }, 500);
@@ -47,7 +47,6 @@ function ServiceAreas() {
 
       {/* Table Section */}
       <div className="service-table-section">
-        {/* Table Header */}
         <div className="service-table-header">
           <div>Service Area</div>
           <div>Description</div>

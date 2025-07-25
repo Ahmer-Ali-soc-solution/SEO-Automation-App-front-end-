@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiSettings, FiUser, FiSearch } from 'react-icons/fi';
-import './Header.css';  // Import the CSS file
+import './Header.css';
 
 function Header({ onLogout }) {
   const handleUserClick = () => {

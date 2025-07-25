@@ -13,7 +13,7 @@ import ManageReviews from './ManageReviews';
 import ManageBlogs from './ManageBlogs';
 
 import { FiMenu } from 'react-icons/fi';
-import './Dashboard.css';  // ✅ Import CSS here
+import './Dashboard.css';  
 
 function Dashboard() {
   const [activeSection, setActiveSection] = useState('Dashboard');
